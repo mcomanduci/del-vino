@@ -1,0 +1,34 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
+    url("../img/carousel-1.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.hero .hero-content {
+  margin: 0 auto;
+  margin-top: 10%;
+  text-align: center;
+  height: 100%;
+  max-width: 1000px;
+}
+
+.hero .hero-content h1 {
+  color: #fff;
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.hero .hero-content button {
+  background-color: #b36d67;
+  color: #fff;
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
