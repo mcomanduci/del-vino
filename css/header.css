@@ -9,7 +9,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 1rem;
+  gap: 2.2rem;
   font-size: 1.5rem;
   color: #FAF9F4;
+}
+
+.header .menu-principal ul li:hover {
+  color: #c5c5c5;
+}
+
+.header .menu-shop ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.2rem;
 }
