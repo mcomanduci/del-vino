@@ -2,10 +2,30 @@
   display: flex;
   flex-direction: column;
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)),
-    url("../img/carousel-1.jpg") center center no-repeat;
-  background-size: cover;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
+
+/* .hero .bg-container div {
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero .bg-container .active-bg {
+  display: block;
+}
+
+.hero .bg-images img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+} */
 
 .hero .hero-content {
   margin: 0 auto;
@@ -29,6 +49,102 @@
   padding: 1rem 2rem;
   border: none;
   border-radius: 5px;
+}
+
+.slides {
+  display: flex;
+  width: 400%;
+  z-index: -1;
+  height: 100%;
+  position: absolute;
+}
+
+.slides input {
+  display: none;
+}
+
+.slide {
+  width: 25%;
+  transition: 1s;
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.5);
+}
+
+.navigation-auto {
+  display: none;
+}
+
+.manual-navigation {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 40px;
+  gap: 16px;
+}
+
+.manual-btn {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 50%;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: 0.5s;
+}
+
+.manual-btn:hover {
+  background-color: #fff;
+}
+
+#radio1:checked ~ .first {
+  margin-left: 0;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1 {
+  background-color: #fff;
+}
+
+#radio2:checked ~ .first {
+  margin-left: -25%;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2 {
+  background-color: #fff;
+}
+
+#radio3:checked ~ .first {
+  margin-left: -50%;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3 {
+  background-color: #fff;
+}
+
+#radio4:checked ~ .first {
+  margin-left: -75%;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4 {
+  background-color: #fff;
+}
+
+.navigation-auto div {
+  border: 2px solid #fff;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.navigation-auto {
+  width: 25%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  bottom: 40px;
+  gap: 16px;
 }
