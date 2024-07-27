@@ -4,7 +4,7 @@
 
 body {
   background-color: #1e1e1e;
-  font-family: "Inter", sans-serif;
+  font-family: "Cormorant Garamond", sans-serif;
 }
 
 img {
@@ -15,10 +15,13 @@ img {
 
 .button-primary {
   display: inline-block;
-  background-color: #b36d67;
+  background-color: #B36D67;
   color: #fff;
   font-size: 1.5rem;
-  padding: 1rem 2rem;
+  padding: 1rem 3rem;
   border: none;
-  border-radius: 5px;
+}
+
+.button-primary:hover {
+  background-color: #93524C;
 }
