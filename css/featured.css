@@ -1,0 +1,70 @@
+.featured {
+  width: 1400px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.featured .title-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 2.125rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  gap: 1rem;
+}
+
+.featured .wine-types {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 4rem;
+}
+
+.featured .wine-types li:hover {
+  color: #a53e4c;
+}
+
+.featured .wines-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 4rem;
+  margin-top: 4rem;
+  gap: 2rem;
+}
+
+.featured .wines-container .wine .wine-img {
+  border: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+  padding: 2rem 5rem;
+}
+
+.featured .wines-container .wine .wine-info {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  padding: 0 0.4rem;
+  color: #898989;
+}
+
+.featured .wines-container .wine .wine-info div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.featured .wines-container .wine .wine-info div span {
+  color: #A53E4C;
+  font-weight: 700;
+  font-size: 1.125rem;
+}
+
+.featured .button-secondary {
+  margin-top: 4rem;
+}

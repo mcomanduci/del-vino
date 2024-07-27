@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Inter:wght@100..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
@@ -125,18 +125,91 @@
         <div class="welcome-text">
           <h3>Bem Vindo</h3>
           <h2>Portal Del Vino</h2>
-          <p>----------------------</p>
+          <p><img src="img/decoration.svg" alt="" /></p>
           <p>
             Descubra a nossa seleção exclusiva de vinhos finos de diversas
             regiões do mundo. Na Portal Del Vino, oferecemos uma experiência
             única para amantes de vinho, com uma curadoria especial e um serviço
             de excelência.
           </p>
-          <a href="/" class="button-primary">Loja</a>
+          <a href="/" class="button-primary">Nossos Produtos</a>
         </div>
-        <div class="welcome-img"></div>
+        <div class="welcome-img">
+          <div class="barrel">
+            <img src="img/welcome-barrel.jpg" alt="" />
+          </div>
+          <div class="wine">
+            <img src="img/welcome-wine.jpg" alt="" />
+          </div>
+        </div>
       </section>
     </div>
+
+    <section class="featured">
+      <div class="title-container">
+        <div class="title">Vinhos em Destaque</div>
+        <img src="img/decoration.svg" alt="" />
+      </div>
+
+      <ul class="wine-types">
+        <li><a href="">Roses</a></li>
+        <li><a href="">Brancos</a></li>
+        <li><a href="">Vermelhos</a></li>
+        <li><a href="">Espumante</a></li>
+        <li><a href="">Outros</a></li>
+      </ul>
+
+      <div class="wines-container">
+        <div class="wine">
+          <div class="wine-img"><img src="img/wines/wine-1.png" alt="" /></div>
+          <div class="wine-info">
+            <h3>Vinhos Rose</h3>
+            <div>
+              <img src="img/icones/star.svg" alt="" />
+              <span>R$ 241,00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="wine">
+          <div class="wine-img"><img src="img/wines/wine-2.png" alt="" /></div>
+          <div class="wine-info">
+            <h3>Vinhos Branco</h3>
+            <div>
+              <img src="img/icones/star.svg" alt="" />
+              <span>R$ 241,00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="wine">
+          <div class="wine-img"><img src="img/wines/wine-3.png" alt="" /></div>
+          <div class="wine-info">
+            <h3>Vinhos Tinto</h3>
+            <div>
+              <img src="img/icones/star.svg" alt="" />
+              <span>R$ 241,00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="wine">
+          <a href="">
+            <div class="wine-img">
+              <img src="img/wines/wine-4.png" alt="" />
+            </div>
+          </a>
+          <div class="wine-info">
+            <h3>Espumante</h3>
+            <div>
+              <img src="img/icones/star.svg" alt="" />
+              <span>R$ 241,00</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="button-secondary" href="#">Veja Todos</a>
+    </section>
 
     <script src="js/script.js"></script>
   </body>

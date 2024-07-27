@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #1e1e1e;
+  background-color: #fff;
   font-family: "Cormorant Garamond", sans-serif;
 }
 
@@ -15,13 +15,29 @@ img {
 
 .button-primary {
   display: inline-block;
-  background-color: #B36D67;
+  background-color: #b36d67;
   color: #fff;
   font-size: 1.5rem;
   padding: 1rem 3rem;
   border: none;
+  text-transform: uppercase;
 }
 
 .button-primary:hover {
-  background-color: #93524C;
+  background-color: #93524c;
+}
+
+.button-secondary {
+  display: inline-block;
+  background-color: #fff;
+  color: #b36d67;
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  border: 1px solid #b36d67;
+  text-transform: uppercase;
+}
+
+.button-secondary:hover {
+  background-color: #93524c;
+  color: #fff;
 }
