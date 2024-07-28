@@ -1,0 +1,121 @@
+.selection-bg {
+  background-color: #f8f5f2;
+}
+
+.selection {
+  width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.selection .title-container h2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20rem;
+  font-family: sans-serif;
+  font-weight: 900;
+  text-transform: uppercase;
+  background: url(../img/carousel-3.jpg) center center/cover no-repeat;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.selection .title-container p {
+  font-size: 2rem;
+  font-family: "Great vibes", cursive;
+  text-align: center;
+  margin-top: 2rem;
+  color: #a53e4c;
+}
+
+.selection .selection-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+  align-items: start;
+  margin-top: 4rem;
+}
+
+.selection .selection-description {
+  padding-left: 6.5rem;
+  display: flex;
+  flex-direction: column;
+  padding-top: 2rem;
+  gap: 4rem;
+}
+
+.selection .selection-description div {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.selection .selection-description div p {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+}
+
+.selection .selection-description div h3 {
+  font-size: 3.325rem;
+}
+
+.selection .selection-description > p {
+  max-width: 300px;
+  line-height: 160%;
+}
+
+.selection .selection-description a {
+  color: #a53e4c;
+  font-weight: 500;
+  font-size: 1.125rem;
+}
+
+.selection .selection-description a:hover {
+  color: #ec0625;
+}
+
+.selection .selection-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selection .selection-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-top: 2rem;
+  padding-right: 6.5rem;
+}
+
+.selection .selection-info div::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 0.5px;
+  background-color: rgba(165, 62, 76, 0.2);
+  margin-top: 1rem;
+}
+
+.selection .selection-info p {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.selection .selection-info span {
+  font-size: 1.125rem;
+}
+
+.selection .button-secondary {
+  margin-top: 3rem;
+  background-color: #F8F5F2;
+}
+
+.selection .button-secondary:hover {
+  background-color: #93524c;
+}
