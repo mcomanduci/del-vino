@@ -31,3 +31,94 @@
   text-align: center;
   line-height: 1.725rem;
 }
+
+.blog .blog-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 2rem;
+  margin: 0 7rem;
+}
+
+.blog .blog-item {
+  display: flex;
+  gap: 2rem;
+}
+
+.blog .blog-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.blog .blog-item p {
+  color: #a53e4c;
+  font-size: 2rem;
+  text-transform: uppercase;
+  position: relative;
+  line-height: 6rem;
+}
+
+.blog .blog-item p span {
+  color: #dbdde0;
+  font-size: 6rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: absolute;
+  top: 0;
+  left: 39px;
+  z-index: -1;
+}
+
+.blog .blog-right p span {
+  right: 39px;
+}
+
+.blog .blog-item h3 {
+  font-size: 1.125rem;
+  color: #363636;
+}
+
+.blog .blog-item h3:hover {
+  color: #a53e4c;
+}
+
+.blog .blog-content > a {
+  display: flex;
+  gap: 0.5rem;
+  color: #898989;
+  margin-top: 0.8rem;
+}
+
+.blog .blog-right > a {
+  justify-content: flex-end;
+}
+
+.blog .blog-content > a:hover {
+  color: #a53e4c;
+}
+
+.blog .blog-content > a img {
+  transition: all 0.25s linear;
+}
+
+.blog .blog-content > a:hover img {
+  transform: translateX(5px);
+}
+
+.blog .blog-img {
+  min-width: 270px;
+  overflow: hidden;
+}
+
+.blog .blog-img img {
+  transition: all 0.25s linear;
+}
+
+.blog .blog-item:hover .blog-img img {
+  transform: scale(1.05);
+}
+
+.blog .blog-right {
+  text-align: right;
+}

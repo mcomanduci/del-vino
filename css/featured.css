@@ -48,10 +48,37 @@
   justify-content: center;
   padding: 2rem 5rem;
   transition: all 0.3s ease-in-out;
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
 }
 
-.featured .wines-container .wine:hover .wine-img {
-  border: 1px solid #a53e4c;
+.featured .wines-container .wine .wine-img:before,
+.featured .wines-container .wine .wine-img:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: -1px;
+  top: -1px;
+  bottom: auto;
+  right: auto;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.featured .wines-container .wine:hover .wine-img:before {
+  -webkit-animation: animate 1s linear forwards;
+  animation: animate 1s linear forwards;
+}
+
+.featured .wines-container .wine:hover .wine-img:after {
+  -webkit-animation: animate2 1s linear forwards;
+  animation: animate2 1s linear forwards;
+  /* border: 1px solid #a53e4c; */
 }
 
 .featured .wines-container .wine .wine-img img {
@@ -90,4 +117,112 @@
 
 .featured .button-secondary {
   margin-top: 4rem;
+}
+
+@-webkit-keyframes animate2 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #a53e4c;
+  }
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #a53e4c;
+    border-left-color: #a53e4c;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #a53e4c;
+    border-left-color: #a53e4c;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: #a53e4c;
+  }
+  50% {
+    width: 0;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #a53e4c;
+    border-left-color: #a53e4c;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: #a53e4c;
+    border-left-color: #a53e4c;
+  }
+}
+
+@-webkit-keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: #a53e4c;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: #a53e4c;
+    border-right-color: #a53e4c;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #a53e4c;
+    border-right-color: #a53e4c;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+}
+
+@keyframes animate {
+  0% {
+    width: 0;
+    height: 0;
+    border-top-color: #a53e4c;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  50% {
+    width: 100%;
+    height: 0;
+    border-top-color: #a53e4c;
+    border-right-color: #a53e4c;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-top-color: #a53e4c;
+    border-right-color: #a53e4c;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
 }
