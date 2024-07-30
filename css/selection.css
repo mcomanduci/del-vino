@@ -16,6 +16,7 @@
   font-weight: 900;
   text-transform: uppercase;
   background: url(../img/carousel-3.jpg) center center/cover no-repeat;
+  background-attachment: fixed;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
