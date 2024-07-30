@@ -52,6 +52,7 @@
 .selection .selection-description div p {
   text-transform: uppercase;
   font-size: 0.875rem;
+  color: #a53e4c;
 }
 
 .selection .selection-description div h3 {
@@ -62,6 +63,7 @@
 .selection .selection-description > p {
   max-width: 300px;
   line-height: 160%;
+  color: #777;
 }
 
 .selection .selection-description a {
@@ -104,6 +106,7 @@
 
 .selection .selection-info span {
   font-size: 1.125rem;
+  color: #777;
 }
 
 .selection .button-secondary {
