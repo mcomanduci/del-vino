@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 body {
   background-color: #f8f5f2;
   font-family: "Barlow", sans-serif;
@@ -44,14 +48,14 @@ img {
 .button-secondary {
   display: inline-block;
   background-color: transparent;
-  color: #B7472A;
+  color: #b7472a;
   font-size: 1.5rem;
   padding: 1rem 3rem;
-  border: 1px solid #B7472A;
+  border: 1px solid #b7472a;
   text-transform: uppercase;
 }
 
 .button-secondary:hover {
-  background-color: #B7472A;
+  background-color: #b7472a;
   color: #fff;
 }
