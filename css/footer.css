@@ -1,0 +1,64 @@
+.footer-bg {
+  background-color: #212121;
+}
+
+.footer {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 4rem;
+}
+
+.footer .cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.footer .footer-card {
+  background-color: #373737;
+  padding: 4rem;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.footer .card-light {
+  background-color: #7a7a7a;
+}
+
+.footer .card-title span {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+}
+
+.footer .card-title h2 {
+  font-size: 3rem;
+}
+
+.footer .card-address {
+  margin-top: 2.3rem;
+  font-size: 1.125rem;
+  line-height: 160%;
+}
+
+.footer .footer-card h3 {
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  color: #b7472a;
+}
+
+.footer .footer-card h3:first-of-type {
+  margin-top: 2.3rem;
+}
+
+.footer .card-social {
+  margin-top: 2.3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.footer .rights {
+  color: #999;
+  margin-top: 4rem;
+  font-size: 0.75rem;
+}
