@@ -3,7 +3,6 @@
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  position: relative;
   overflow: hidden;
   position: relative;
 }
@@ -18,7 +17,6 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  background-position: center center;
   background-size: cover;
   opacity: 0;
   transition: 0.8s ease;
@@ -55,4 +53,27 @@
   font-size: 1.125rem;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .hero .hero-content {
+    padding: 0 2rem;
+    max-width: 600px;
+  }
+
+  .hero .hero-content h1 {
+    font-size: 3rem;
+  }
+
+  .hero .button-primary {
+    padding: 1.25rem 2.5rem;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .hero .hero-content h1 {
+    font-size: 2rem;
+    max-width: 350px;
+  }
 }

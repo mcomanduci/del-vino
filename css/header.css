@@ -3,7 +3,12 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem 4rem;
+  gap: 2rem;
   z-index: 11;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header .menu-principal ul {
@@ -13,7 +18,7 @@
   gap: 2.2rem;
   font-size: 1.125rem;
   font-weight: 500;
-  color: #FAF9F4;
+  color: #faf9f4;
 }
 
 .header .menu-principal ul li:hover {
@@ -25,4 +30,26 @@
   justify-content: space-between;
   align-items: center;
   gap: 2.2rem;
+}
+
+@media (max-width: 1100px) {
+  .header {
+    padding: 1rem 1rem;
+  }
+
+  .header .menu-principal ul{
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 900px) {
+  .header .menu-principal {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .header .logo {
+    width: 80px;
+  }
 }
