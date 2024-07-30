@@ -17,10 +17,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  font-size: 2.125rem;
-  text-transform: uppercase;
-  font-weight: 700;
   gap: 1rem;
+}
+
+.featured .title-container h2 {
+  text-transform: uppercase;
 }
 
 .featured .wine-types {

@@ -1,0 +1,49 @@
+.partners {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.partners .partners-title {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.partners .partners-title p {
+  max-width: 500px;
+  color: #777;
+}
+
+.partners .partners-container {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.partners .partners-btn {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.partners .partners-btn button {
+  background-color: transparent;
+  border: 1px dashed #a53e4c;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-family: monospace;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.partners .partners-btn button:hover {
+  background-color: #fff;
+}

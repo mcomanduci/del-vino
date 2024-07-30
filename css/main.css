@@ -8,11 +8,17 @@ body {
 }
 
 .title {
-  font-family: "Philosopher", serif;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2.225rem;
+  color: #363636;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .title-2 {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Great Vibes", cursive;
+  font-size: 2rem;
+  color: #a53e4c;
 }
 
 img {
@@ -37,15 +43,15 @@ img {
 
 .button-secondary {
   display: inline-block;
-  background-color: #fff;
-  color: #b36d67;
+  background-color: transparent;
+  color: #B7472A;
   font-size: 1.5rem;
   padding: 1rem 3rem;
-  border: 1px solid #b36d67;
+  border: 1px solid #B7472A;
   text-transform: uppercase;
 }
 
 .button-secondary:hover {
-  background-color: #93524c;
+  background-color: #B7472A;
   color: #fff;
 }
