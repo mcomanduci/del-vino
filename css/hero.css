@@ -24,7 +24,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: center;
 }
 
 .slide.active {
@@ -35,12 +35,13 @@
 .hero .hero-content {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   gap: 3rem;
   color: var(--light-text);
   width: 1400px;
   margin: 0 auto;
   padding: 0 4rem;
+
 }
 
 .hero .hero-content h1 {
@@ -48,6 +49,7 @@
   font-weight: 300;
   max-width: 800px;
   color: var(--light-text);
+  text-align: center;
 }
 
 .hero .hero-content span {

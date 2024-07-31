@@ -21,3 +21,14 @@ setInterval(() => {
   setActiveSlide();
   console.log(activeSlide);
 }, 3000);
+
+// Logo
+const logo = document.querySelector(".logo img");
+
+logo.addEventListener("mouseenter", () => {
+  logo.src = "img/logo-orig.svg";
+});
+
+logo.addEventListener("mouseleave", () => {
+  logo.src = "img/logo-branco.svg";
+});
