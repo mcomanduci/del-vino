@@ -73,7 +73,6 @@
   color: var(--primary-color);
   font-weight: 500;
   font-size: 1.125rem;
-  
 }
 
 .selection .selection-description a:hover {
@@ -128,5 +127,18 @@
 
   .selection .selection-description > p {
     max-width: 600px;
+  }
+
+  .selection .selection-img {
+    max-width: 100px;
+    margin: 0 auto;
+  }
+
+  .selection .selection-info p {
+    font-size: 1.5rem;
+  }
+
+  .selection .selection-info span {
+    font-size: 1rem;
   }
 }
