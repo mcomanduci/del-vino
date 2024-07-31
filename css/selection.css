@@ -25,7 +25,7 @@
   animation: sliding-animation 60s infinite linear;
 }
 
-.selection .title-container span {
+.selection .title-container p {
   text-align: center;
   margin-top: 2rem;
   display: block;
@@ -40,7 +40,6 @@
 }
 
 .selection .selection-description {
-  padding-left: 6.5rem;
   display: flex;
   flex-direction: column;
   padding-top: 2rem;
@@ -74,6 +73,7 @@
   color: var(--primary-color);
   font-weight: 500;
   font-size: 1.125rem;
+  
 }
 
 .selection .selection-description a:hover {
@@ -120,5 +120,13 @@
 @media (max-width: 900px) {
   .selection .selection-content {
     grid-template-columns: 1fr;
+  }
+
+  .selection .selection-description {
+    gap: 1rem;
+  }
+
+  .selection .selection-description > p {
+    max-width: 600px;
   }
 }

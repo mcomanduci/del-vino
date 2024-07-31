@@ -41,6 +41,7 @@ img {
   padding: 1rem 3rem;
   border: none;
   text-transform: uppercase;
+  transition: 0.5s ease;
 }
 
 .button-primary:hover {
@@ -55,6 +56,7 @@ img {
   padding: 1rem 3rem;
   border: 1px solid var(--primary-color);
   text-transform: uppercase;
+  transition: 0.5s ease;
 }
 
 .button-secondary:hover {
