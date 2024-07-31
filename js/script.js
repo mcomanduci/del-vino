@@ -19,7 +19,6 @@ setInterval(() => {
     activeSlide = 0;
   }
   setActiveSlide();
-  console.log(activeSlide);
 }, 3000);
 
 // Logo
@@ -31,4 +30,19 @@ logo.addEventListener("mouseenter", () => {
 
 logo.addEventListener("mouseleave", () => {
   logo.src = "img/logo-branco.svg";
+});
+
+// text-size
+const wineText = document.querySelector(".selection .title-container h2");
+const windowWidth = window.innerWidth;
+wineText.style.fontSize =
+  windowWidth < 1400 ? `${(window.innerWidth * 100) / 1400}%` : "100%";
+
+window.addEventListener("resize", (e) => {
+  const windowWidth = window.innerWidth;
+  if (windowWidth < 1420) {
+    wineText.style.fontSize = `${(windowWidth * 100) / 1400}%`;
+  } else {
+    wineText.style.fontSize = "100%";
+  }
 });

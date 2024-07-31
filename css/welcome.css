@@ -1,11 +1,11 @@
 .welcome {
   max-width: 1400px;
-  margin: 0 auto;
+  margin: 4rem auto;
   padding: 0 2rem;
-  height: 820px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   background: url(/img/welcome-bg.png) center center no-repeat;
+  height: 700px;
 }
 
 .welcome .welcome-text {
@@ -17,9 +17,6 @@
   color: var(--gray-text);
 }
 
-.welcome .welcome-text h2 {
-  text-transform: uppercase;
-}
 
 .welcome .welcome-text p {
   max-width: 450px;
@@ -27,24 +24,41 @@
   text-align: center;
 }
 
-.welcome-img {
+.welcome .welcome-img {
+  display: flex;
+  justify-content: end;
+  align-items: start;
   position: relative;
 }
 
-.welcome-img .barrel {
-  position: absolute;
-  top: 4rem;
-  right: 0;
-  z-index: 0;
+.welcome .welcome-img .barrel {
+  margin: 0 0 0 100px;
 }
 
-.welcome-img .wine {
+.welcome .welcome-img .wine {
   position: absolute;
-  bottom: 4rem;
-  left: 4rem;
-  z-index: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 200px 0 0;
 }
 
-.welcome-img img {
-  border-radius: 2px;
+@media (max-width: 1000px) {
+  .welcome {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .welcome .welcome-img {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .welcome .welcome-text p {
+    font-size: 0.875rem;
+  }
+
+  .welcome .button-primary {
+    font-size: 1.125rem;
+  }
 }

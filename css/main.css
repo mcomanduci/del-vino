@@ -18,6 +18,7 @@ body {
   color: var(--title-gray);
   font-weight: 700;
   text-transform: uppercase;
+  text-align: center;
 }
 
 .title-2 {

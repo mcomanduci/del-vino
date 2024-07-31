@@ -15,41 +15,76 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2.2rem;
+  gap: 2rem;
   font-size: 1.125rem;
   font-weight: 500;
   color: #faf9f4;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
 }
 
-.header .menu-principal ul li:hover {
-  color: #c5c5c5;
+.header .menu-principal ul li {
+  position: relative;
+}
+
+.header .menu-principal ul li::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 2px;
+  bottom: -8px;
+  background: white;
+  transition: 0.5s;
+}
+
+.header .menu-principal ul li.active::before,
+.header .menu-principal ul li:hover::before {
+  width: calc(100% - 2px);
+  left: 1px;
 }
 
 .header .menu-shop ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 2.2rem;
+  gap: 2rem;
 }
 
 @media (max-width: 1100px) {
   .header {
-    padding: 1rem 1rem;
+    padding: 1rem 2rem;
   }
 
-  .header .menu-principal ul{
-    font-size: 1rem;
+  .header .menu-principal ul {
+    gap: 1.5rem;
+  }
+
+  .header .menu-shop ul {
+    gap: 1.5rem;
+  }
+
+  .header .logo {
+    width: 80px;
   }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 800px) {
   .header .menu-principal {
     display: none;
   }
 }
 
-@media (max-width: 600px) {
+
+@media (max-width: 400px) {
+  .header {
+    padding: 1rem 1.5rem;
+  }
+
+  .header .menu-shop ul {
+    gap: 1rem;
+  }
+
   .header .logo {
-    width: 80px;
+    width: 70px;
   }
 }
