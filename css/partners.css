@@ -1,5 +1,5 @@
 .partners {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
@@ -15,7 +15,7 @@
 
 .partners .partners-title p {
   max-width: 500px;
-  color: #777;
+  color: var(--gray-text);
 }
 
 .partners .partners-container {
@@ -33,7 +33,7 @@
 
 .partners .partners-btn button {
   background-color: transparent;
-  border: 1px dashed #a53e4c;
+  border: 1px dashed var(--primary-color);
   border-radius: 50%;
   width: 32px;
   height: 32px;
@@ -45,5 +45,5 @@
 }
 
 .partners .partners-btn button:hover {
-  background-color: #fff;
+  background-color: var(--light-text);
 }

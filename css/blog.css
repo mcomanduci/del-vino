@@ -1,5 +1,5 @@
 .blog {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
@@ -15,7 +15,7 @@
 
 .blog .blog-title p {
   font-size: 1.125rem;
-  color: #777;
+  color: var(--gray-text);
   max-width: 500px;
   text-align: center;
   line-height: 1.725rem;
@@ -41,7 +41,7 @@
 }
 
 .blog .blog-item p {
-  color: #a53e4c;
+  color: var(--primary-color);
   font-size: 2rem;
   text-transform: uppercase;
   position: relative;
@@ -49,7 +49,7 @@
 }
 
 .blog .blog-item p span {
-  color: #dbdde0;
+  color: var(--gray-border);
   font-size: 6rem;
   font-weight: 700;
   text-transform: uppercase;
@@ -65,17 +65,17 @@
 
 .blog .blog-item h3 {
   font-size: 1.125rem;
-  color: #363636;
+  color: var(--title-gray);
 }
 
 .blog .blog-item h3:hover {
-  color: #a53e4c;
+  color: var(--primary-color);
 }
 
 .blog .blog-content > a {
   display: flex;
   gap: 0.5rem;
-  color: #898989;
+  color: var(--gray-text);
   margin-top: 0.8rem;
 }
 
@@ -84,7 +84,7 @@
 }
 
 .blog .blog-content > a:hover {
-  color: #a53e4c;
+  color: var(--primary-color);
 }
 
 .blog .blog-content > a img {
@@ -110,4 +110,33 @@
 
 .blog .blog-right {
   text-align: right;
+}
+
+@media (max-width: 900px) {
+  .blog .blog-container {
+    grid-template-columns: 1fr;
+    margin: 0 2rem;
+  }
+
+  .blog .blog-item {
+    flex-direction: column;
+  }
+
+  .blog .blog-img {
+    min-width: 100%;
+  }
+
+  .blog .blog-item p {
+    font-size: 1.5rem;
+    line-height: 3rem;
+  }
+
+  .blog .blog-item p span {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .blog .blog-item h3 {
+    font-size: 1rem;
+  }
 }

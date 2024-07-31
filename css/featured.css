@@ -1,9 +1,9 @@
 .featured-bg {
-  background-color: #fff;
+  background-color: var(--light-text);
 }
 
 .featured {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 4rem 2rem;
   display: flex;
@@ -32,7 +32,7 @@
 }
 
 .featured .wine-types li:hover {
-  color: #a53e4c;
+  color: var(--primary-color);
 }
 
 .featured .wines-container {
@@ -44,7 +44,7 @@
 }
 
 .featured .wines-container .wine .wine-img {
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--gray-border);
   display: flex;
   justify-content: center;
   padding: 2rem 5rem;
@@ -71,17 +71,6 @@
   border: 1px solid transparent;
 }
 
-.featured .wines-container .wine:hover .wine-img:before {
-  -webkit-animation: animate 1s linear forwards;
-  animation: animate 1s linear forwards;
-}
-
-.featured .wines-container .wine:hover .wine-img:after {
-  -webkit-animation: animate2 1s linear forwards;
-  animation: animate2 1s linear forwards;
-  /* border: 1px solid #a53e4c; */
-}
-
 .featured .wines-container .wine .wine-img img {
   transition: all 0.3s ease-in-out;
 }
@@ -96,13 +85,13 @@
   flex-direction: column;
   gap: 0.4rem;
   padding: 0 0.4rem;
-  color: #898989;
+  color: var(--gray-text);
   transition: all 0.3s ease-in-out;
 }
 
 .featured .wines-container .wine:hover .wine-info,
 .featured .wines-container .wine:hover .wine-info span {
-  color: #a53e4c;
+  color: var(--primary-color);
 }
 
 .featured .wines-container .wine .wine-info div {
@@ -111,7 +100,7 @@
 }
 
 .featured .wines-container .wine .wine-info div span {
-  color: #a53e4c;
+  color: var(--primary-color);
   font-weight: 700;
   font-size: 1.125rem;
 }
@@ -120,110 +109,37 @@
   margin-top: 4rem;
 }
 
-@-webkit-keyframes animate2 {
-  0% {
-    width: 0;
-    height: 0;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: #a53e4c;
-  }
-  50% {
-    width: 0;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: #a53e4c;
-    border-left-color: #a53e4c;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: #a53e4c;
-    border-left-color: #a53e4c;
-  }
+.featured .wines-container .wine:hover .img-rose:before {
+  -webkit-animation: animate-rose 1s linear forwards;
+  animation: animate-rose 1s linear forwards;
 }
 
-@keyframes animate2 {
-  0% {
-    width: 0;
-    height: 0;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: #a53e4c;
-  }
-  50% {
-    width: 0;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: #a53e4c;
-    border-left-color: #a53e4c;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    border-top-color: transparent;
-    border-right-color: transparent;
-    border-bottom-color: #a53e4c;
-    border-left-color: #a53e4c;
-  }
+.featured .wines-container .wine:hover .img-rose:after {
+  -webkit-animation: animate-rose-2 1s linear forwards;
+  animation: animate-rose-2 1s linear forwards;
 }
 
-@-webkit-keyframes animate {
-  0% {
-    width: 0;
-    height: 0;
-    border-top-color: #a53e4c;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  50% {
-    width: 100%;
-    height: 0;
-    border-top-color: #a53e4c;
-    border-right-color: #a53e4c;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    border-top-color: #a53e4c;
-    border-right-color: #a53e4c;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
+.featured .wines-container .wine:hover .img-white:before {
+  -webkit-animation: animate-white 1s linear forwards;
+  animation: animate-white 1s linear forwards;
 }
 
-@keyframes animate {
-  0% {
-    width: 0;
-    height: 0;
-    border-top-color: #a53e4c;
-    border-right-color: transparent;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  50% {
-    width: 100%;
-    height: 0;
-    border-top-color: #a53e4c;
-    border-right-color: #a53e4c;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    border-top-color: #a53e4c;
-    border-right-color: #a53e4c;
-    border-bottom-color: transparent;
-    border-left-color: transparent;
-  }
+.featured .wines-container .wine:hover .img-white:after {
+  -webkit-animation: animate-white-2 1s linear forwards;
+  animation: animate-white-2 1s linear forwards;
+}
+
+.featured .wines-container .wine:hover .img-red:before {
+  -webkit-animation: animate-red 1s linear forwards;
+  animation: animate-red 1s linear forwards;
+}
+
+.featured .wines-container .wine:hover .img-red:after {
+  -webkit-animation: animate-red-2 1s linear forwards;
+  animation: animate-red-2 1s linear forwards;
+}
+
+.featured .wines-container .wine:hover .img-sparkling:before {
+  -webkit-animation: animate-sparkling 1s linear forwards;
+  animation: animate-sparkling 1s linear forwards;
 }

@@ -17,8 +17,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
-  /* background-size: cover; */
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   opacity: 0;
   transition: 0.8s ease;
@@ -38,7 +37,7 @@
   flex-direction: column;
   align-items: start;
   gap: 3rem;
-  color: #fff;
+  color: var(--light-text);
   width: 1400px;
   margin: 0 auto;
   padding: 0 4rem;
@@ -48,7 +47,7 @@
   font-size: 5rem;
   font-weight: 300;
   max-width: 800px;
-  color: #fff;
+  color: var(--light-text);
 }
 
 .hero .hero-content span {

@@ -1,5 +1,5 @@
 .selection {
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 4rem 2rem;
   display: flex;
@@ -52,7 +52,7 @@
 .selection .selection-description div p {
   text-transform: uppercase;
   font-size: 0.875rem;
-  color: #a53e4c;
+  color: var(--primary-color);
 }
 
 .selection .selection-description div h3 {
@@ -67,13 +67,13 @@
 }
 
 .selection .selection-description a {
-  color: #a53e4c;
+  color: var(--primary-color);
   font-weight: 500;
   font-size: 1.125rem;
 }
 
 .selection .selection-description a:hover {
-  color: #ec0625;
+  color: var(--secondary-color);
 }
 
 .selection .selection-img {
@@ -106,14 +106,15 @@
 
 .selection .selection-info span {
   font-size: 1.125rem;
-  color: #777;
+  color: var(--gray-text);
 }
 
 .selection .button-secondary {
   margin-top: 3rem;
-  background-color: #F8F5F2;
 }
 
-.selection .button-secondary:hover {
-  background-color: #93524c;
+@media (max-width: 900px) {
+  .selection .title-container h2 {
+    font-size: 10rem;
+  }
 }

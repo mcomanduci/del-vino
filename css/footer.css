@@ -1,9 +1,9 @@
 .footer-bg {
-  background-color: #212121;
+  background-color: var(--gray-background);
 }
 
 .footer {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 2rem 4rem;
 }
@@ -44,7 +44,7 @@
 .footer .footer-card h3 {
   font-size: 1.125rem;
   margin-top: 1rem;
-  color: #b7472a;
+  color: var(--primary-color);
 }
 
 .footer .footer-card h3:first-of-type {
@@ -58,7 +58,11 @@
 }
 
 .footer .rights {
-  color: #999;
+  color: var(--gray-text);
   margin-top: 4rem;
   font-size: 0.75rem;
+}
+
+.footer .rights a {
+  color: var(--primary-color);
 }

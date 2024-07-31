@@ -7,15 +7,15 @@ html {
 }
 
 body {
-  background-color: #f8f5f2;
+  background-color: var(--primary-background);
   font-family: "Barlow", sans-serif;
-  overflow-x: hidden;
+  color: var(--title-gray);
 }
 
 .title {
   font-family: "Cormorant Garamond", serif;
   font-size: 2.225rem;
-  color: #363636;
+  color: var(--title-gray);
   font-weight: 700;
   text-transform: uppercase;
 }
@@ -23,7 +23,7 @@ body {
 .title-2 {
   font-family: "Great Vibes", cursive;
   font-size: 2rem;
-  color: #a53e4c;
+  color: var(--primary-color);
 }
 
 img {
@@ -34,8 +34,8 @@ img {
 
 .button-primary {
   display: inline-block;
-  background-color: #b36d67;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--light-text);
   font-size: 1.5rem;
   padding: 1rem 3rem;
   border: none;
@@ -43,20 +43,20 @@ img {
 }
 
 .button-primary:hover {
-  background-color: #93524c;
+  background-color: var(--secondary-color);
 }
 
 .button-secondary {
   display: inline-block;
   background-color: transparent;
-  color: #b7472a;
+  color: var(--primary-color);
   font-size: 1.5rem;
   padding: 1rem 3rem;
-  border: 1px solid #b7472a;
+  border: 1px solid var(--primary-color);
   text-transform: uppercase;
 }
 
 .button-secondary:hover {
-  background-color: #b7472a;
-  color: #fff;
+  background-color: var(--primary-color);
+  color: var(--light-text);
 }
