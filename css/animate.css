@@ -321,3 +321,12 @@
     border-left-color: #470c13;
   }
 }
+
+@keyframes sliding-animation {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: -100vw 0;
+  }
+}
