@@ -1,0 +1,34 @@
+.subscription {
+  position: relative;
+}
+
+.subscription .subscription-img img {
+  width: 100%;
+}
+
+.subscription .subscription-container {
+  position: absolute;
+  top: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100%;
+  width: 100%;
+}
+
+.subscription .subscription-container .subscription-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 4rem 4rem 0;
+}
+
+.subscription .subscription-container .subscription-content p {
+  color: var(--light-text);
+  text-align: center;
+  margin-bottom: 2rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.4rem;
+  line-height: 130%;
+  max-width: 600px;
+}
