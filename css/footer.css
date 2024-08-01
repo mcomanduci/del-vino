@@ -30,7 +30,7 @@
 .footer .footer-container .footer-col {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 2rem;
   grid-column: span 2;
 }
 

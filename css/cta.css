@@ -30,6 +30,13 @@
   gap: 0.5rem;
 }
 
+.cta .cta-title span {
+  font-family: "Barlow", sans-serif;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
 .cta .cta-title span,
 .cta .cta-title h2 {
   color: var(--gray-border);
