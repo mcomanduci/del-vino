@@ -11,9 +11,10 @@
 .footer .footer-container {
   margin-top: 6rem;
   display: grid;
-  grid-template-columns: repeat(11, 1fr);
+  grid-template-columns: repeat(9, 1fr);
   gap: 3rem;
   padding: 0 4rem;
+  padding-bottom: 4rem;
 }
 
 .footer .footer-container .footer-col:first-of-type {
@@ -89,10 +90,16 @@
   margin-top: 1rem;
   font-size: 0.75rem;
   text-align: center;
+  border-top: 1px solid #292929;
+  padding-top: 1rem;
 }
 
 .footer .rights a {
   color: var(--primary-color);
+}
+
+.footer .rights p {
+  margin-top: 1rem;
 }
 
 @media (max-width: 500px) {
