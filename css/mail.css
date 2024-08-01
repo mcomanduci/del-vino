@@ -1,0 +1,155 @@
+.mail-bg {
+  background-color: var(--gray-background);
+}
+
+.mail {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 1rem 2rem 2rem;
+}
+
+.mail .cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.mail .mail-card {
+  background-color: #373737;
+  padding: 4rem;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.mail .card-light {
+  background-color: #7a7a7a;
+}
+
+.mail .card-title span {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.mail .card-title h2 {
+  font-size: 3rem;
+}
+
+.mail .card-address {
+  margin-top: 2.3rem;
+  font-size: 1.125rem;
+  line-height: 160%;
+}
+
+.mail .mail-card h3 {
+  font-size: 1.125rem;
+  margin-top: 1rem;
+  color: var(--primary-color);
+}
+
+.mail .mail-card h3:first-of-type {
+  margin-top: 2.3rem;
+}
+
+.mail .card-social {
+  margin-top: 2.3rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.mail .mail-card form {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.mail .mail-card input,
+.mail .mail-card textarea {
+  border-bottom: 1px solid var(--primary-color);
+  padding-left: 0;
+  padding-bottom: 0.5rem;
+}
+
+.mail .mail-card input:focus,
+.mail .mail-card textarea {
+  outline: none;
+  box-shadow: 0 2px 0 0 var(--primary-color);
+}
+
+#subject,
+#message {
+  grid-column: span 2;
+}
+
+.mail .mail {
+  margin-top: 2rem;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  color: var(--light-text);
+}
+
+.mail .mail h2 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.mail .mail form {
+  width: 600px;
+  position: relative;
+}
+
+.mail .mail form::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: var(--primary-color);
+}
+
+.mail .mail input,
+.mail .mail-card input,
+.mail .mail-card textarea {
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  color: var(--light-text);
+  padding: 1rem;
+  border: 1px solid transparent;
+}
+
+.mail .mail-card input::placeholder,
+.mail .mail-card textarea::placeholder {
+  color: white;
+}
+
+.mail .mail input:focus {
+  outline: none !important;
+  border: 1px solid var(--primary-color);
+  box-shadow: 0 0 8px var(--primary-color);
+}
+
+.mail .mail button {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  color: var(--light-text);
+  border: none;
+  padding: 1rem;
+}
+
+.mail .mail p {
+  font-size: 0.75rem;
+  color: var(--gray-text);
+}
+
+.mail .mail a {
+  color: var(--primary-color);
+}
