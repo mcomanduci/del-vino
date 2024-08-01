@@ -58,8 +58,33 @@
   gap: 1rem;
 }
 
+.footer .footer-card form {
+  margin-top: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.footer .footer-card input,
+.footer .footer-card textarea {
+  border-bottom: 1px solid var(--primary-color);
+  padding-left: 0;
+  padding-bottom: 0.5rem;
+}
+
+.footer .footer-card input:focus,
+.footer .footer-card textarea {
+  outline: none;
+  box-shadow: 0 2px 0 0 var(--primary-color);
+}
+
+#subject,
+#message {
+  grid-column: span 2;
+}
+
 .footer .mail {
-  margin-top: 6rem;
+  margin-top: 2rem;
   display: flex;
   width: 100%;
   flex-direction: column;
@@ -89,13 +114,20 @@
   background-color: var(--primary-color);
 }
 
-.footer .mail input {
+.footer .mail input,
+.footer .footer-card input,
+.footer .footer-card textarea {
   border: none;
   background-color: transparent;
   width: 100%;
   color: var(--light-text);
   padding: 1rem;
   border: 1px solid transparent;
+}
+
+.footer .footer-card input::placeholder,
+.footer .footer-card textarea::placeholder {
+  color: white;
 }
 
 .footer .mail input:focus {
@@ -150,16 +182,18 @@
 .footer .footer-container h3 {
   font-size: 1.125rem;
   color: var(--light-text);
+  font-family: "Cormorant Garamond", serif;
 }
 
 .footer .footer-container ul {
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.3rem;
   color: var(--gray-text);
 }
 
-.footer .footer-container ul a:hover {
+.footer .footer-container ul a:hover,
+.footer .footer-row ul a:hover {
   color: var(--primary-color);
 }
 
