@@ -11,6 +11,10 @@
   right: 0;
 }
 
+.header .logo {
+  width: 110px;
+}
+
 .header .menu-principal ul {
   display: flex;
   justify-content: space-between;
@@ -73,7 +77,6 @@
     display: none;
   }
 }
-
 
 @media (max-width: 400px) {
   .header {
