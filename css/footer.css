@@ -47,6 +47,11 @@
   color: var(--gray-text);
 }
 
+.footer .address {
+  line-height: 120%;
+  max-width: 260px;
+}
+
 .footer .footer-container ul a:hover,
 .footer .footer-row ul a:hover {
   color: var(--primary-color);

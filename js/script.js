@@ -71,3 +71,13 @@ for (let i = 0; i < 11; i++) {
   itemEl.innerHTML = item;
   storeContainer.appendChild(itemEl);
 }
+
+// Go to top
+const goTop = document.querySelector(".go-top");
+
+goTop.addEventListener("click", () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+});
