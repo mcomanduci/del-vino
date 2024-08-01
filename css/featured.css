@@ -50,7 +50,6 @@
   display: flex;
   justify-content: center;
   padding: 2rem 5rem;
-  transition: all 0.3s ease-in-out;
   position: relative;
   z-index: 1;
   -webkit-transition: all 0.25s linear;
@@ -111,39 +110,34 @@
   margin-top: 4rem;
 }
 
-.featured .wines-container .wine:hover .img-rose:before {
+.wine:hover .img-rose:before {
   -webkit-animation: animate-rose 1s linear forwards;
   animation: animate-rose 1s linear forwards;
 }
 
-.featured .wines-container .wine:hover .img-rose:after {
+.wine:hover .img-rose:after {
   -webkit-animation: animate-rose-2 1s linear forwards;
   animation: animate-rose-2 1s linear forwards;
 }
 
-.featured .wines-container .wine:hover .img-white:before {
+.wine:hover .img-white:before {
   -webkit-animation: animate-white 1s linear forwards;
   animation: animate-white 1s linear forwards;
 }
 
-.featured .wines-container .wine:hover .img-white:after {
+.wine:hover .img-white:after {
   -webkit-animation: animate-white-2 1s linear forwards;
   animation: animate-white-2 1s linear forwards;
 }
 
-.featured .wines-container .wine:hover .img-red:before {
+.wine:hover .img-red:before {
   -webkit-animation: animate-red 1s linear forwards;
   animation: animate-red 1s linear forwards;
 }
 
-.featured .wines-container .wine:hover .img-red:after {
+.wine:hover .img-red:after {
   -webkit-animation: animate-red-2 1s linear forwards;
   animation: animate-red-2 1s linear forwards;
-}
-
-.featured .wines-container .wine:hover .img-sparkling:before {
-  -webkit-animation: animate-sparkling 1s linear forwards;
-  animation: animate-sparkling 1s linear forwards;
 }
 
 @media (max-width: 1425px) {

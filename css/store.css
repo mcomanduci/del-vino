@@ -1,0 +1,142 @@
+.store-bg {
+  background-color: var(--light-text);
+}
+
+.store {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.store .store-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.store .wines-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 4rem;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.store .store-header {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: space-between;
+  gap: 1rem;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.store .store-header li a {
+  display: flex;
+  justify-content: space-between;
+  padding-right: 4rem;
+}
+
+.store .store-header li:hover {
+  color: var(--primary-color);
+}
+
+.store .store-header li a img {
+  transition: all 0.3s ease-in-out;
+}
+
+.store .store-header li:hover a img {
+  transform: translateX(1rem);
+}
+
+.store .store-item {
+  display: flex;
+  /* justify-content: center; */
+  gap: 1.5rem;
+}
+
+.store .store-item .store-info div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 1rem;
+}
+
+.store .store-img {
+  padding: 1.2rem 2.2rem;
+  border: 1px solid var(--gray-border);
+  position: relative;
+  z-index: 1;
+  -webkit-transition: all 0.25s linear;
+  -o-transition: all 0.25s linear;
+  transition: all 0.25s linear;
+}
+
+.store .store-img:before,
+.store .store-img:after {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  left: -1px;
+  top: -1px;
+  bottom: auto;
+  right: auto;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 1px solid transparent;
+}
+
+.store .store-item .store-img img {
+  transition: all 0.3s ease-in-out;
+}
+
+.store .store-item:hover h3 {
+  color: var(--primary-color);
+}
+
+.store .store-item:hover .store-img img {
+  transform: scale(1.1);
+}
+
+.store-item:hover .store-img:before {
+  -webkit-animation: animate-rose 1s linear forwards;
+  animation: animate-rose 1s linear forwards;
+}
+
+.store-item:hover .store-img:after {
+  -webkit-animation: animate-rose-2 1s linear forwards;
+  animation: animate-rose-2 1s linear forwards;
+}
+
+.store .store-info {
+  display: flex;
+  flex-direction: column;
+  gap: 1.8rem;
+  padding-top: 1rem;
+}
+
+.store .store-info h3 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: #898989;
+}
+
+.store .store-info span {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--primary-color);
+}

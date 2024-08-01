@@ -46,3 +46,28 @@ window.addEventListener("resize", (e) => {
     wineText.style.fontSize = "100%";
   }
 });
+
+// STORE TEST
+const storeContainer = document.querySelector(".store .wines-container");
+
+const item = `
+            <div class="store-img">
+              <img src="img/wines/wine-1-small.png" alt="" />
+            </div>
+            <div class="store-info">
+              <div>
+                <h3>Vinho Tinto</h3>
+                <div>
+                  <img src="img/icones/star.svg" alt="" />
+                </div>
+              </div>
+              <span>R$ 241,00</span>
+            </div>
+          `;
+
+for (let i = 0; i < 11; i++) {
+  const itemEl = document.createElement("div");
+  itemEl.classList.add("store-item");
+  itemEl.innerHTML = item;
+  storeContainer.appendChild(itemEl);
+}
