@@ -1,67 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div class="feature-col feature-col2">
-      <div class="img-holder text-center pull-left">
-        <a href="shop-detail.html"
-          ><img
-            src="https://via.placeholder.com/25x95"
-            alt="image description"
-            class="img-responsive"
-        /></a>
-      </div>
-      <div class="txt-wrap pull-left">
-        <h2 class="heading3">
-          <a href="shop-detail.html">Tomatin 12 Year Old</a>
-        </h2>
-        <footer class="footer">
-          <ul class="list-unstyled rating-list">
-            <li>
-              <a href="javascript:void(0);"><i class="fa fa-star"></i></a>
-            </li>
-            <li>
-              <a href="javascript:void(0);"><i class="fa fa-star"></i></a>
-            </li>
-            <li>
-              <a href="javascript:void(0);"><i class="fa fa-star"></i></a>
-            </li>
-            <li>
-              <a href="javascript:void(0);"><i class="fa fa-star-o"></i></a>
-            </li>
-            <li>
-              <a href="javascript:void(0);"><i class="fa fa-star-o"></i></a>
-            </li>
-          </ul>
-          <strong class="price">$ 195.00</strong>
-          <ul class="list-unstyled text-center social-network">
-            <li>
-              <a href="javascript:void(0);"
-                ><i class="fa fa-arrows-alt" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a href="compare.html"
-                ><i class="fa fa-refresh" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a href="wishlist.html"
-                ><i class="fa fa-heart-o" aria-hidden="true"></i
-              ></a>
-            </li>
-            <li>
-              <a href="shopping-cart.html"
-                ><i class="fa fa-shopping-cart" aria-hidden="true"></i
-              ></a>
-            </li>
-          </ul>
-        </footer>
-      </div>
+<div class="cards-container">
+  <div class="mail-card">
+    <div class="card-title">
+      <span>Mantenha Contato</span>
+      <h2>Contato</h2>
     </div>
-  </body>
-</html>
+    <div class="card-address">
+      <p>Vinart Winery Corporation</p>
+      <p>82967 Luciano Shore,</p>
+      <p>Doylechester, 40637</p>
+    </div>
+    <h3>info@vinartwine.com</h3>
+    <h3>(508) 397-4035</h3>
+    <div class="card-social">
+      <img src="img/icones/facebook.svg" alt="" />
+      <img src="img/icones/twitter.svg" alt="" />
+      <img src="img/icones/youtube.svg" alt="" />
+    </div>
+  </div>
+
+  <div class="mail-card card-light">
+    <div class="card-title">
+      <span>Envie uma mensagem</span>
+      <h2>Tire sua Dúvida</h2>
+    </div>
+    <form action="">
+      <input type="text" id="name" placeholder="Nome" />
+      <input type="text" id="last-name" placeholder="Sobrenome" />
+      <input type="text" id="phone" placeholder="Telefone" />
+      <input type="email" id="email" placeholder="E-mail" />
+      <input type="text" id="subject" placeholder="Assunto" />
+      <textarea
+        name=""
+        id="message"
+        rows="6"
+        placeholder="Mensagem"
+      ></textarea>
+      <button class="button-primary">Enviar</button>
+    </form>
+  </div>
+</div>
+
+.mail .cards-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.mail .mail-card {
+  background-color: #373737;
+  padding: 4rem;
+  color: #fff;
+  flex-grow: 1;
+}
+
+.mail .card-light {
+  background-color: #7a7a7a;
+}
+
+.mail .card-title span {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+
+.mail .card-title h2 {
+  font-size: 3rem;
+}
+
+.mail .card-address {
+  margin-top: 2.3rem;
+  font-size: 1.125rem;
+  line-height: 160%;
+}

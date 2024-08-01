@@ -1,5 +1,5 @@
 .footer-bg {
-  background-color: #141414;
+  background-color: var(--gray-background);
 }
 
 .footer {
@@ -7,8 +7,6 @@
   margin: 0 auto;
   padding: 2rem 4rem;
 }
-
-
 
 .footer .footer-container {
   margin-top: 6rem;
