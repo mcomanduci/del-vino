@@ -17,7 +17,7 @@ body {
   font-size: 2.225rem;
   color: var(--title-gray);
   font-weight: 700;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   text-align: center;
 }
 
@@ -34,15 +34,28 @@ img {
   display: block;
 }
 
-.button-primary {
+/* .button-primary {
   display: inline-block;
   background-color: var(--primary-color);
   color: var(--light-text);
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 1rem 3rem;
   border: none;
-  /* text-transform: uppercase; */
   transition: 0.5s ease;
+} */
+
+.button-primary {
+  display: inline-block;
+  color: var(--light-text);
+  font-size: 1rem;
+  padding: 0;
+  width: 250px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s ease;
+  background-color: var(--primary-color);
 }
 
 .button-primary:hover {

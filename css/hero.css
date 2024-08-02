@@ -1,7 +1,6 @@
 .hero {
   display: flex;
   flex-direction: column;
-  /* height: 100vh; */
   height: 100vh;
   width: 100%;
   overflow: hidden;
@@ -22,7 +21,6 @@
   opacity: 0;
   transition: 0.8s ease;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -36,12 +34,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 3rem;
   color: var(--light-text);
   width: 1400px;
   margin: 0 auto;
   padding: 0 4rem;
   position: absolute;
+  margin-top: 4rem;
+  text-align: center;
+  margin-right: 2rem;
 }
 
 .hero .hero-content h1 {
@@ -50,6 +52,8 @@
   max-width: 800px;
   color: var(--light-text);
   text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
 }
 
 @media (max-width: 900px) {

@@ -20,10 +20,6 @@
   gap: 1rem;
 }
 
-.featured .title-container h2 {
-  text-transform: uppercase;
-}
-
 .featured .wine-types {
   display: flex;
   justify-content: center;
