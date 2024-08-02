@@ -14,10 +14,9 @@ body {
 
 .title {
   font-family: "Cormorant Garamond", serif;
-  font-size: 2.225rem;
+  font-size: 2.8rem;
   color: var(--title-gray);
   font-weight: 700;
-  /* text-transform: uppercase; */
   text-align: center;
 }
 
@@ -46,7 +45,7 @@ img {
 
 .button-primary {
   display: inline-block;
-  color: var(--light-text);
+  color: var(--primary-color);
   font-size: 1rem;
   padding: 0;
   width: 250px;
@@ -55,11 +54,13 @@ img {
   justify-content: center;
   align-items: center;
   transition: 0.5s ease;
-  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  /* background-color: var(--primary-color); */
 }
 
 .button-primary:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--light-text);
 }
 
 .button-secondary {
