@@ -61,6 +61,7 @@
 .selection .selection-description div h3 {
   font-size: 3.325rem;
   font-weight: 500;
+  text-align: left;
 }
 
 .selection .selection-description > p {

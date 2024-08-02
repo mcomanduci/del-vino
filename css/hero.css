@@ -56,10 +56,6 @@
   letter-spacing: 3px;
 }
 
-.hero .button-hero {
-  
-}
-
 @media (max-width: 900px) {
   .hero .hero-content {
     padding: 0 2rem;

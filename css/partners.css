@@ -16,6 +16,7 @@
 .partners .partners-title p {
   max-width: 500px;
   color: var(--gray-text);
+  line-height: 1.725rem;
 }
 
 .partners .partners-container {
