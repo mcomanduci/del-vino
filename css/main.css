@@ -54,17 +54,19 @@ img {
 }
 
 .button-secondary {
+  background-color: var(--primary-color);
   display: inline-block;
-  background-color: transparent;
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  padding: 1rem 3rem;
-  border: 1px solid var(--primary-color);
-  /* text-transform: uppercase; */
+  color: var(--light-text);
+  font-size: 1rem;
+  padding: 0;
+  width: 250px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transition: 0.5s ease;
 }
 
 .button-secondary:hover {
-  background-color: var(--primary-color);
-  color: var(--light-text);
+  background-color: var(--secondary-color);
 }
