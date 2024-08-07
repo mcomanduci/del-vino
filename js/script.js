@@ -23,15 +23,17 @@ if (document.querySelector(".hero")) {
 }
 
 // Logo
-const logo = document.querySelector(".logo img");
+if (document.querySelector(".logo img")) {
+  const logo = document.querySelector(".logo img");
 
-logo.addEventListener("mouseenter", () => {
-  logo.src = "img/logo-branco.svg";
-});
+  logo.addEventListener("mouseenter", () => {
+    logo.src = "img/logo-branco.svg";
+  });
 
-logo.addEventListener("mouseleave", () => {
-  logo.src = "img/logo-orig.svg";
-});
+  logo.addEventListener("mouseleave", () => {
+    logo.src = "img/logo-orig.svg";
+  });
+}
 
 // text-size
 if (document.querySelector(".selection")) {
