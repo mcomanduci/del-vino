@@ -50,7 +50,7 @@ if (document.querySelector(".selection")) {
   });
 }
 
-// STORE TEST
+// STORE TEST TODO: Delete
 if (document.querySelector(".store")) {
   const storeContainer = document.querySelector(".store .wines-container");
 
@@ -85,4 +85,21 @@ goTop.addEventListener("click", () => {
     top: 0,
     behavior: "smooth",
   });
+});
+
+// Change Wines Color TESTE TODO: Delete
+const tintoButton = document.querySelector(".tinto");
+const brancoButton = document.querySelector(".branco");
+const roseButton = document.querySelector(".rose");
+
+tintoButton.addEventListener("click", () => {
+  document.documentElement.style.setProperty("--wine-color", "#470C13");
+});
+
+brancoButton.addEventListener("click", () => {
+  document.documentElement.style.setProperty("--wine-color", "#BE8F36");
+});
+
+roseButton.addEventListener("click", () => {
+  document.documentElement.style.setProperty("--wine-color", "#B91A3F");
 });
