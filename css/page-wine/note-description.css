@@ -25,6 +25,7 @@
   text-align: left;
   letter-spacing: 0;
   line-height: 120%;
+  max-width: 300px;
 }
 
 .note-description .note-description-text span {
@@ -112,14 +113,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 40px;
-  margin-bottom: 120px;
+  margin-top: 240px;
+  margin-bottom: 240px;
   position: relative;
 }
 
 .note-description .quote-description div {
   position: absolute;
-  top: -80px;
   width: 600px;
   z-index: -1;
 }

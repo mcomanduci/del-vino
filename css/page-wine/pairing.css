@@ -51,6 +51,13 @@
   color: var(--wine-color);
 }
 
-.pairing a {
+.pairing .pairing-text p {
+  font-size: 1.125rem;
+  line-height: 160%;
+}
+
+.pairing .button-primary {
   background-color: var(--wine-color);
+  color: #fff;
+  font-size: 1.125rem;
 }

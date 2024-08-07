@@ -1,3 +1,15 @@
 .page-wine {
   background-color: #fff;
 }
+
+.page-wine .header {
+  position: relative;
+}
+
+.page-wine .header .menu-principal ul li {
+  color: var(--title-gray);
+}
+
+.page-wine .header .menu-principal ul li::before {
+  background: #000;
+}
