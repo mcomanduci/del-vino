@@ -1,0 +1,41 @@
+.pairing {
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.pairing .pairing-img {
+  justify-self: flex-end;
+}
+
+.pairing .pairing-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  max-width: 650px;
+  justify-self: left;
+  padding: 80px;
+  gap: 60px;
+}
+
+.pairing .pairing-text h3 {
+  font-size: 4rem;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: 120%;
+}
+
+.pairing .pairing-text span {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: var(--wine-color);
+}
+
+.pairing a {
+  background-color: var(--wine-color);
+}

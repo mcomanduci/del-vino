@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portal Del Vino</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Great+Vibes&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- TODO: Ajustar no WP -->
+    <style>
+      :root {
+        --wine-color: #470c13;
+      }
+    </style>
+  </head>
+  <body class="page-wine">
+    <header
+      class="header"
+      style="position: relative; background-color: #212121"
+    >
+      <div class="logo">
+        <a href="/">
+          <img src="img/logo-orig.svg" alt="Logo da loja Portal Del Vino" />
+        </a>
+      </div>
+
+      <nav class="menu-principal">
+        <ul>
+          <li class="active"><a href="/">Home</a></li>
+          <li><a href="#">Sobre Nós</a></li>
+          <li><a href="#">Loja</a></li>
+          <li><a href="#">Clube</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Blog</a></li>
+        </ul>
+      </nav>
+
+      <div class="menu-shop">
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="img/icones/shop-cart.svg" alt="sacola de compras"
+            /></a>
+          </li>
+          <li>
+            <a href="#"
+              ><img src="img/icones/user.svg" alt="conta do usuário"
+            /></a>
+          </li>
+          <li>
+            <a href="#"><img src="img/icones/search.svg" alt="busca" /></a>
+          </li>
+          <li><img src="img/icones/open-menu.svg" alt="menu lateral" /></li>
+        </ul>
+      </div>
+    </header>
+
+    <section class="wine-main">
+      <div class="img-wine">
+        <img src="img/page-wine/wine.jpg" alt="" />
+      </div>
+      <div class="wine-info">
+        <div class="wine-info-title">
+          <span class="title-2">Vinhos Tintos</span>
+          <h2 class="title">2015 Cabernet Sauvignon</h2>
+        </div>
+        <div class="wine-info-text">
+          Served well-chilled our authentically made Cabernet Sauvignon is a
+          refreshingly delicate dry wine with hints of strawberry, citrus, and
+          peach laced fruit.
+        </div>
+        <div class="wine-info-price">
+          <span class="price">R$ 99,99</span>
+          <div class="cart-wine">
+            <input type="number" value="1" />
+            <a class="button-secondary" href="#">Adicionar ao carrinho</a>
+          </div>
+        </div>
+
+        <div class="wine-info-table">
+          <div class="header-table-wine">
+            <h4>Informações do Produto</h4>
+            <h4>Avaliações (0)</h4>
+          </div>
+          <div class="body-table-wine">
+            <div class="composition-wine">
+              <p>Composição</p>
+              <p>100% Cabernet Sauvignon</p>
+            </div>
+            <div class="year-wine">
+              <p>Ano</p>
+              <p>2015</p>
+            </div>
+            <div class="profile-wine">
+              <p>Perfil</p>
+              <p>Meio-Seco</p>
+            </div>
+            <div class="alcohol-wine">
+              <p>Teor Alcoólico</p>
+              <p>13.5%</p>
+            </div>
+            <div class="botle-wine">
+              <p>Garrafa</p>
+              <p>750ml</p>
+            </div>
+            <div class="region-wine">
+              <p>Região</p>
+              <p>Provence</p>
+            </div>
+          </div>
+        </div>
+
+        <p class="wine-category">Categoria: <a href="#">Vinhos Tinto</a></p>
+      </div>
+    </section>
+
+    <section class="note-description">
+      <div class="note-description-container">
+        <div class="note-description-text">
+          <h3 class="title">Descrição das Notas</h3>
+          <span>Limão | Pêra | Frutas Vermelhas</span>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
+            ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
+            accumsan lacus vel facilisis.
+          </p>
+          <div class="wine-caracteristics">
+            <div>
+              <p>Aroma</p>
+              <div class="caracteristics-bar aroma"></div>
+            </div>
+            <div>
+              <p>Sabor</p>
+              <div class="caracteristics-bar sabor"></div>
+            </div>
+            <div>
+              <p>Textura</p>
+              <div class="caracteristics-bar textura"></div>
+            </div>
+          </div>
+        </div>
+        <div class="description-wine-img">
+          <img src="img/page-wine/description.jpg" alt="" />
+        </div>
+      </div>
+      <div class="quote-description">
+        <div>
+          <img src="img/page-wine/quotes.svg" alt="" />
+        </div>
+        <p>
+          We are committed to crafting uniquely distinctive wines that will
+          eloquently express their terroir and will convey our own spirit and
+          personality.
+        </p>
+        <span>Winemaker John Doe</span>
+      </div>
+    </section>
+
+    <section class="pairing">
+      <div class="pairing-img">
+        <img src="img/page-wine/pairing.jpg" alt="" />
+      </div>
+      <div class="pairing-text">
+        <h3 class="title">Harmonização</h3>
+        <span>Carnes Vermelhas | Queijos Fortes | Saladas</span>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+          suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+          lacus vel facilisis.
+        </p>
+        <a class="button-secondary" href="">Adicionar ao Carrinho</a>
+      </div>
+    </section>
+
+    <section class="related-products-single">
+      <h3 class="title-related">Produtos <br />Relacionados</h3>
+      <div class="related-products-single-container">
+        <div class="related-product-single">
+          <img src="img/page-wine/wine-related.png" alt="" />
+          <div>
+            <h4>2015 Cabernet Sauvignon</h4>
+            <span>R$ 99,99</span>
+            <a class="button-secondary" href="">Adicionar</a>
+          </div>
+        </div>
+        <div class="related-product-single">
+          <img src="img/page-wine/wine-related.png" alt="" />
+          <div>
+            <h4>2016 Aged Merlot</h4>
+            <span>R$ 99,99</span>
+            <a class="button-secondary" href="">Adicionar</a>
+          </div>
+        </div>
+        <div class="related-product-single">
+          <img src="img/page-wine/wine-related.png" alt="" />
+          <div>
+            <h4>2017 Grenache</h4>
+            <span>R$ 99,99</span>
+            <a class="button-secondary" href="">Adicionar</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="cta-bg">
+      <div class="cta">
+        <div class="cta-inner-bg">
+          <div class="cta-title">
+            <span class="title-2">Venha para a portal Del Vino</span>
+            <h2 class="title">Experimente o melhor</h2>
+          </div>
+          <div class="btn-container">
+            <a class="button-primary" href="#">Nossa Loja</a>
+            <a class="button-primary" href="#">Clube de Assinatura</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mail-bg">
+      <section class="mail">
+        <div class="mail">
+          <h2>Se inscreva para novidades e promoções</h2>
+          <form action="">
+            <input type="email" placeholder="Seu e-mail" />
+            <button>Inscrever</button>
+          </form>
+          <p>
+            Ao inserir seu e-mail, você concorda com nossos
+            <a href="">Termos de Serviço</a> e
+            <a href="">Política de Privacidade</a>.
+          </p>
+        </div>
+      </section>
+    </div>
+
+    <div class="tag-bg">
+      <section class="tag">
+        <div class="tag-social">
+          <a href=""><img src="img/icones/facebook.svg" alt="" /></a>
+          <a href=""><img src="img/icones/facebook.svg" alt="" /></a>
+          <a href=""><img src="img/icones/facebook.svg" alt="" /></a>
+          <a href=""><img src="img/icones/facebook.svg" alt="" /></a>
+        </div>
+        <div class="go-top">
+          <img src="img/icones/up.svg" alt="" />
+        </div>
+        <div class="payments">
+          <img src="img/payments.png" alt="" />
+        </div>
+      </section>
+    </div>
+
+    <div class="footer-bg">
+      <section class="footer">
+        <div class="footer-container">
+          <div class="footer-col">
+            <div class="footer-logo">
+              <img src="img/logo-text.svg" alt="" />
+            </div>
+            <ul>
+              <li class="address">
+                Endereço : Rua resplendor, 2400, Divinópolis, MG, Brasil
+              </li>
+              <li>Email: portaldelvino@gmail.com</li>
+              <li>Telefone: (37) 99999-9999</li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Links</h3>
+            <ul>
+              <li><a href="">Página Inicial</a></li>
+              <li><a href="">Sobre Nós</a></li>
+              <li><a href="">Nossa Loja</a></li>
+              <li><a href="">Clube de Assinatura</a></li>
+              <li><a href="">Blog</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col">
+            <h3>Cliente</h3>
+            <ul>
+              <li><a href="">Minha Conta</a></li>
+              <li><a href="">Meus Pedidos</a></li>
+              <li><a href="">Lista de Desejo</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-col footer-contact">
+            <h3>Legal</h3>
+            <ul>
+              <li><a href="">Política de Privacidade</a></li>
+              <li><a href="">Termo de serviço</a></li>
+              <li><a href="">Troca e Devolução</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="rights">
+          <p>
+            A venda de bebidas alcoólicas é proibida para menores de 18 anos.
+            Aprecie com moderação. Se beber, não dirija.
+          </p>
+
+          <p>© <a href="">Portal Del Vino</a>. Todos os direitos reservados.</p>
+        </div>
+      </section>
+    </div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>

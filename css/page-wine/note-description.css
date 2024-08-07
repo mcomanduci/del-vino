@@ -1,0 +1,125 @@
+.note-description {
+  max-width: 1400px;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+
+.note-description .note-description-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.note-description .note-description-text {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  max-width: 650px;
+  justify-self: right;
+  padding: 80px;
+  gap: 60px;
+}
+
+.note-description .note-description-text h3 {
+  font-size: 4rem;
+  text-align: left;
+  letter-spacing: 0;
+  line-height: 120%;
+}
+
+.note-description .note-description-text span {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: var(--wine-color);
+}
+
+.note-description .note-description-text p {
+  font-size: 1.125rem;
+  line-height: 160%;
+}
+
+.note-description .wine-caracteristics {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.note-description .wine-caracteristics p {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 3px;
+  line-height: 200%;
+}
+
+.note-description .wine-caracteristics .caracteristics-bar {
+  background-color: #eee;
+  height: 10px;
+  width: 100%;
+  position: relative;
+}
+
+.note-description .wine-caracteristics .caracteristics-bar.aroma::after {
+  content: "";
+  background-color: var(--wine-color);
+  height: 10px;
+  width: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.note-description .wine-caracteristics .caracteristics-bar.sabor::after {
+  content: "";
+  background-color: var(--wine-color);
+  height: 10px;
+  width: 70%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.note-description .wine-caracteristics .caracteristics-bar.textura::after {
+  content: "";
+  background-color: var(--wine-color);
+  height: 10px;
+  width: 60%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.note-description .description-wine-img {
+  z-index: -2;
+}
+
+.note-description .quote-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+  margin-bottom: 120px;
+  position: relative;
+}
+
+.note-description .quote-description div {
+  position: absolute;
+  top: -80px;
+  width: 600px;
+  z-index: -1;
+}
+
+.note-description .quote-description p {
+  max-width: 600px;
+  font-size: 2.2rem;
+  text-align: center;
+}
+
+.note-description .quote-description span {
+  font-size: 0.8rem;
+  font-weight: 700;
+  margin-top: 40px;
+}

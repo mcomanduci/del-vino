@@ -5,6 +5,10 @@
 }
 
 .cta-bg {
+  background: linear-gradient(180deg, #fff 50%, var(--gray-background) 50%);
+}
+
+.home .cta-bg {
   background: linear-gradient(
     180deg,
     var(--primary-background) 50%,

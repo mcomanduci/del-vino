@@ -15,3 +15,9 @@
 @import "css/mail.css";
 @import "css/footer.css";
 @import "css/animate.css";
+
+@import "css/page-wine/main.css";
+@import "css/page-wine/wine-main.css";
+@import "css/page-wine/note-description.css";
+@import "css/page-wine/pairing.css";
+@import "css/page-wine/related-products.css";
