@@ -1,16 +1,22 @@
+.about .header {
+  background-color: #fff;
+}
+
 .about .hero-container {
   position: relative;
-  height: 100vh;
+  height: 60vh;
   text-align: center;
+  /* padding: 0 0.5rem; */
 }
 
 .about .hero-bg {
   height: 100%;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
     url("../../img/page-about/hero-bg.jpg");
-  background-position: 25% center;
+  background-position: 50% center;
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .about .hero-content {
