@@ -1,0 +1,90 @@
+.history-about-bg {
+  background-color: #1b1b1b;
+}
+
+.history-about {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 100px 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: #f8f5f2;
+  column-gap: 100px;
+}
+
+.history-about .history-title {
+  grid-column: span 2;
+  text-align: center;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 3rem;
+  font-weight: light;
+  padding-bottom: 30px;
+}
+
+.history-about .container-about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.history-about .container-about h2 {
+  font-size: 3rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: light;
+  line-height: 130%;
+  max-width: 500px;
+  margin-bottom: 42px;
+}
+
+.history-about .container-about span {
+  color: var(--primary-color);
+}
+
+.history-about .container-about p {
+  font-size: 1rem;
+  line-height: 160%;
+  max-width: 350px;
+}
+.history-about .container-about .container-1 {
+  padding-top: 200px;
+  padding-bottom: 50px;
+  margin-left: 52px;
+}
+
+.history-about .container-about .container-2 {
+  margin-left: 52px;
+  margin-top: 16px;
+  padding-bottom: 50px;
+}
+
+.history-about .container-about p:first-of-type {
+  margin-bottom: 30px;
+}
+
+.history-about .container-about .frame-1 {
+  background-image: url("../../img/page-about/img-moldura-preta-2.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.history-about .container-about .frame-2 {
+  background-image: url("../../img/page-about/img-moldura-preta-2.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.history-about .container-about .frame-3 {
+  background-image: url("../../img/page-about/img-moldura-preta-2.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.history-about .container-about .frame-4 {
+  background-image: url("../../img/page-about/img-moldura-preta-2.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.about .cta-bg {
+  background: linear-gradient(180deg, #1b1b1b 50%, var(--gray-background) 50%);
+}

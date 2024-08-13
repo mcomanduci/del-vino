@@ -1,0 +1,25 @@
+.about .hero-container {
+  position: relative;
+  height: 100vh;
+  text-align: center;
+}
+
+.about .hero-bg {
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../../img/page-about/hero-bg.jpg");
+  background-position: 25% center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.about .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about .hero-content h1 {
+  color: #fff;
+}

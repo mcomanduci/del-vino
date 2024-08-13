@@ -1,0 +1,47 @@
+.main-about {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.main-about .container-about h2 {
+  font-size: 3rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: light;
+  line-height: 130%;
+  max-width: 500px;
+  margin-bottom: 42px;
+}
+
+.main-about .container-about .container-1 {
+  margin-top: 242px;
+}
+
+.main-about .container-about .container-2 {
+  margin-left: 52px;
+  margin-top: 16px;
+}
+
+.main-about .container-about p {
+  font-size: 1rem;
+  line-height: 160%;
+  max-width: 500px;
+}
+
+.main-about .container-about p:first-of-type {
+  margin-bottom: 30px;
+}
+
+.main-about .container-about .frame-2 {
+  background-image: url("../../img/page-about/img-moldura-2.jpg");
+  background-position: center center;
+  background-size: cover;
+}
+
+.main-about .container-about .frame-1 {
+  background-image: url("../../img/page-about/img-moldura-1.jpg");
+  background-position: center center;
+  background-size: cover;
+}

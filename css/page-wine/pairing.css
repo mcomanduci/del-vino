@@ -1,6 +1,7 @@
 .pairing {
   max-width: 1400px;
   margin: 0 auto;
+  padding: 0 2rem;
   margin-top: 60px;
   display: grid;
   grid-template-columns: 1fr 1fr;
