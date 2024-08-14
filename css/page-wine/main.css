@@ -3,16 +3,19 @@
 }
 
 .page-wine .header,
-.about .header {
+.about .header,
+.subscription .header {
   position: relative;
 }
 
 .page-wine .header .menu-principal ul li,
-.about .header .menu-principal ul li {
+.about .header .menu-principal ul li,
+.subscription .header .menu-principal ul li {
   color: var(--title-gray);
 }
 
 .page-wine .header .menu-principal ul li::before,
-.page-wine .header .menu-principal ul li::after {
+.about .header .menu-principal ul li::before,
+.subscription .header .menu-principal ul li::before {
   background: #000;
 }

@@ -5,13 +5,14 @@
 .about .hero-container {
   position: relative;
   height: 60vh;
+  height: 400px;
   text-align: center;
   /* padding: 0 0.5rem; */
 }
 
 .about .hero-bg {
   height: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../../img/page-about/hero-bg.jpg");
   background-position: 50% center;
   background-size: cover;

@@ -1,0 +1,111 @@
+.subscription .info-subs {
+  max-width: 1400px;
+  margin: 100px auto;
+  padding: 0 2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.subscription .white-part {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  gap: 20px;
+}
+
+.subscription .white-part .title-info span {
+  font-size: 0.725rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.subscription .white-part .title-info h2 {
+  font-size: 3.2rem;
+  font-weight: light;
+  max-width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.subscription .white-part p {
+  line-height: 150%;
+  max-width: 500px;
+  font-size: 1.125rem;
+}
+
+.subscription .white-part p:last-of-type {
+  margin-bottom: 20px;
+}
+
+.subscription .white-part .subs-icon {
+  display: flex;
+  gap: 24px;
+}
+
+.subscription .white-part .subs-icon .icons-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.subscription .white-part .subs-icon .icons-text h3 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.subscription .white-part .subs-icon .icons-text p {
+  font-size: 1.125rem;
+  color: var(--primary-color);
+}
+
+.subscription .red-part {
+  background-color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  gap: 20px;
+  color: white;
+}
+
+.subscription .red-part .title-info span {
+  font-size: 0.725rem;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+
+.subscription .red-part .title-info h2 {
+  font-size: 3.2rem;
+  font-weight: light;
+  max-width: 400px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+.subscription .red-part ul li {
+  margin-top: 24px;
+  font-size: 1.125rem;
+}
+
+.subscription .red-part ul li::before {
+  background-image: url("../../img/page-subscription/check.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+.subscription .red-part ul li:not(:last-of-type):after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.3);
+  display: block;
+  margin-top: 15px;
+}

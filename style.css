@@ -25,3 +25,7 @@
 @import "css/page-about/hero-about.css";
 @import "css/page-about/main-about.css";
 @import "css/page-about/history-about.css";
+
+@import "css/page-subscription/hero-subs.css";
+@import "css/page-subscription/info-subs.css";
+@import "css/page-subscription/price-subs.css";
