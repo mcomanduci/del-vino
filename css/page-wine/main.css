@@ -4,18 +4,21 @@
 
 .page-wine .header,
 .about .header,
-.subscription .header {
+.subscription .header,
+.page-blog .header {
   position: relative;
 }
 
 .page-wine .header .menu-principal ul li,
 .about .header .menu-principal ul li,
-.subscription .header .menu-principal ul li {
+.subscription .header .menu-principal ul li,
+.page-blog .header .menu-principal ul li {
   color: var(--title-gray);
 }
 
 .page-wine .header .menu-principal ul li::before,
 .about .header .menu-principal ul li::before,
-.subscription .header .menu-principal ul li::before {
+.subscription .header .menu-principal ul li::before,
+.page-blog .header .menu-principal ul li::before {
   background: #000;
 }
